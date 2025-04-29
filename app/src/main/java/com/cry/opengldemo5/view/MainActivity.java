@@ -1,8 +1,9 @@
 package com.cry.opengldemo5.view;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.cry.opengldemo5.R;
 import com.cry.opengldemo5.wallpaper.LiveWallpaperInfo;

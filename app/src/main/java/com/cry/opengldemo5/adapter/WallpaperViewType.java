@@ -5,9 +5,10 @@ import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.MediaMetadataRetriever;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.cry.opengldemo5.R;
 import com.cry.opengldemo5.view.WallpaperPreviewActivity;

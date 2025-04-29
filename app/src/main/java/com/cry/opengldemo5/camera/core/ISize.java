@@ -1,7 +1,8 @@
 package com.cry.opengldemo5.camera.core;
 
-import android.support.annotation.NonNull;
 import android.util.ArrayMap;
+
+import androidx.annotation.NonNull;
 
 import java.util.Set;
 import java.util.SortedSet;

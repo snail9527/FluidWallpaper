@@ -1,14 +1,15 @@
 package com.cry.opengldemo5.adapter;
 
 import android.content.Context;
-import android.support.annotation.MainThread;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.MainThread;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,7 @@ import java.util.List;
  * Created by liujinwei on 2018/7/17.
  */
 
-public class VarietyTypeRecyclerViewAdapter extends RecyclerView.Adapter<ViewHolder> {
+public class VarietyTypeRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final String TAG = getClass().getSimpleName();
 
     private List<ItemViewDataWrapper> mItemDataList;

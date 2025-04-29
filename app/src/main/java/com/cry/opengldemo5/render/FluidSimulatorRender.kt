@@ -477,10 +477,10 @@ class FluidSimulatorRender(context: Context): ViewGLRender(), DealTouchEvent {
             bitmap = Bitmap.createScaledBitmap(bitmap, mWidth, mHeight, true);
             val text = liveWallpaperInfo.mWallpaperText
             if (!TextUtils.isEmpty(text)) {
-                var bitmapConfig: android.graphics.Bitmap.Config? = bitmap.config
+                var bitmapConfig = bitmap.config
                 // set default bitmap config if none
                 if (bitmapConfig == null) {
-                    bitmapConfig = android.graphics.Bitmap.Config.ARGB_8888
+                    bitmapConfig = Bitmap.Config.ARGB_8888
                 }
                 // resource bitmaps are imutable, so we need to convert it to mutable one
                 bitmap = bitmap.copy(bitmapConfig, true)
@@ -506,11 +506,11 @@ class FluidSimulatorRender(context: Context): ViewGLRender(), DealTouchEvent {
                     //上下翻转
                     matrix.setScale(1f, -1f);
                     try {
-                        val scaleBitmap = Bitmap.createBitmap(bitmap, 0, 0, it.getWidth(), it.getHeight(), matrix, true)
+                        val scaleBitmap = Bitmap.createBitmap(it, 0, 0, it.getWidth(), it.getHeight(), matrix, true)
                         //左右翻转
                         matrix.setScale(1f, -1f);
                         try {
-                            bitmap = Bitmap.createBitmap(bitmap, 0, 0, scaleBitmap.getWidth(), scaleBitmap.getHeight(), matrix, true)
+                            bitmap = Bitmap.createBitmap(it, 0, 0, scaleBitmap.getWidth(), scaleBitmap.getHeight(), matrix, true)
                         } catch (ex: IllegalArgumentException) {
                             ex.printStackTrace()
                         }

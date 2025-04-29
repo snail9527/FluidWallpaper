@@ -2,8 +2,9 @@ package com.cry.opengldemo5.camera.core;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.v4.util.SparseArrayCompat;
+
+import androidx.annotation.NonNull;
+import androidx.collection.SparseArrayCompat;
 
 /**
  * DESCRIPTION:高宽比.用来筛选对应比例的相机尺寸

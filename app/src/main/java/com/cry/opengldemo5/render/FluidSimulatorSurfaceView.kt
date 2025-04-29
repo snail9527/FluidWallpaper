@@ -16,7 +16,7 @@ class FluidSimulatorSurfaceView(context: Context): GLSurfaceView(context) {
             MotionEvent.ACTION_DOWN,
             MotionEvent.ACTION_UP -> {
                 queueEvent {
-                    delegate!!.onTouchEvent(e)
+                    delegate?.onTouchEvent(e)
                 }
             }
         }
